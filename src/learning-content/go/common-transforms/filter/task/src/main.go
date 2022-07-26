@@ -17,6 +17,7 @@ func main() {
 
 	input := beam.Create(s, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
+    // The [input] need to be filtered with the function you wrote
 	output := input
 
 	debug.Print(s, output)
@@ -27,4 +28,6 @@ func main() {
 		log.Exitf(context.Background(), "Failed to execute job: %v", err)
 	}
 }
+
+// Write here function ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection
 
