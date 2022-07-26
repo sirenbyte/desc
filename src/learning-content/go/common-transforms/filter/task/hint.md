@@ -1,0 +1,1 @@
+Write a function using ```filter.Exclude``` which accepts ```scope``` and ```PCollection``` and a function which returns ```bool```
