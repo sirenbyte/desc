@@ -1,0 +1,1 @@
+You can write an equation in which the number is divisible by 2 without a remainder.    
