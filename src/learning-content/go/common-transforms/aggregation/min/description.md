@@ -2,6 +2,8 @@
 
 Provides a variety of different transforms for computing the minimum values in a collection, either globally or for each key.
 
+You can find the global minimum value from the ```PCollection``` by using ```Min()```
+
 ```
 import (
 	"github.com/apache/beam/sdks/go/pkg/beam"
@@ -13,7 +15,7 @@ func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 }
 ```
 
-Calculate the minimum of the elements associated with each unique key.
+To calculate the minimum of the elements associated with each unique key, you can use ```MinPerKey()```
 
 ```
 import (

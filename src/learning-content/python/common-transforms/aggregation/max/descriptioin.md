@@ -4,7 +4,7 @@ In the following example, we create a pipeline with a PCollection. Then, we get 
 
 ### Maximum element in a PCollection
 
-We use ```Combine.Globally()``` to get the maximum element from the entire PCollection.
+You use ```CombineGlobally(lambda elements: max(elements or [None]))``` to get the maximum element from the entire ```PCollection```.
 
 ```
 import apache_beam as beam
@@ -26,7 +26,7 @@ Output
 
 ### Maximum elements for each key
 
-We use ```Combine.PerKey()``` to get the maximum element for each unique key in a PCollection of key-values.
+You can use ```Combine.PerKey()``` to get the maximum element for each unique key in a PCollection of key-values.
 
 ```
 import apache_beam as beam

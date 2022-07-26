@@ -2,7 +2,7 @@ Count to get the total number of elements in different ways.
 
 ### Counting all elements in a PCollection
 
-We use ```Count.Globally()``` to count all elements in a PCollection, even if there are duplicate elements.
+You can use ```Count.Globally()``` to count all elements in a PCollection, even if there are duplicate elements.
 
 ```
 import apache_beam as beam
@@ -24,7 +24,7 @@ Output
 
 ### Counting elements for each key
 
-We use ```Count.PerKey()``` to count the elements for each unique key in a PCollection of key-values.
+You can use ```Count.PerKey()``` to count the elements for each unique key in a PCollection of key-values.
 
 ```
 import apache_beam as beam
@@ -59,7 +59,7 @@ Output
 
 ### Counting all unique elements
 
-We use ```Count.PerElement()``` to count only the unique elements in a PCollection.
+You can use ```Count.PerElement()``` to count only the unique elements in a PCollection.
 
 ```
 import apache_beam as beam

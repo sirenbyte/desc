@@ -4,7 +4,7 @@ Transforms for computing the arithmetic mean of the elements in a collection, or
 
 ### Mean of element in a PCollection
 
-We use ```Mean.Globally()``` to get the average of the elements from the entire ```PCollection```.
+You can find the global mean value from the ```PCollection``` by using ```Mean.Globally()```
 
 ```
 import apache_beam as beam
@@ -25,7 +25,7 @@ Output
 
 ### Mean of elements for each key
 
-We use ```Mean.PerKey()``` to get the average of the elements for each unique key in a ```PCollection``` of key-values.
+You can use ```Mean.PerKey()``` to get the average of the elements for each unique key in a ```PCollection``` of key-values.
 
 ```
 import apache_beam as beam
@@ -53,7 +53,7 @@ Output
 
 ### Mean of elements for each key
 
-We use ```Mean.PerKey()``` to get the average of the elements for each unique key in a ```PCollection``` of key-values.
+You can use ```Mean.PerKey()``` to get the average of the elements for each unique key in a ```PCollection``` of key-values.
 
 ```
 import apache_beam as beam

@@ -1,8 +1,8 @@
 ### Count
 
-Counts the number of elements within each aggregation. The Count transform has three varieties:
+Counts the number of elements within each aggregation. The Count transform has two varieties:
 
-```CountElms()``` counts the number of elements in the entire PCollection. The result is a collection with a single element.
+You can count the number of elements in ```PCollection``` with ```CountElms()```, it will return one element.
 
 ```
 import (
@@ -15,7 +15,7 @@ func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 }
 ```
 
-```Count()``` counts how many elements are associated with each key. It ignores the values. The resulting collection has one output for every key in the input collection.
+To count how many elements are associated with a particular key, you can use ```Count()``` , the result will be one output for each key
 
 ```
 import (

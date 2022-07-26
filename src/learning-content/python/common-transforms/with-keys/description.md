@@ -1,6 +1,6 @@
 # WithKeys
 
-
+Takes a ```PCollection<V>``` and produces a ```PCollection<KV<K, V>>``` by associating each input element with a key.
 
 ```
 import apache_beam as beam

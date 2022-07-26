@@ -3,7 +3,7 @@
 Transforms for computing the sum of the elements in a collection, or the sum of the values associated with each key in a collection of key-value pairs.
 
 
-Get the sum of a PCollection elements
+You can use ```Sum()``` to sum the elements of a ```PCollection```.
 
 ```
 import (
@@ -16,7 +16,7 @@ func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 }
 ```
 
-Calculate the sum of the elements associated with each unique key.
+To calculate the sum of the elements associated with each unique key, you can use ```SumPerKey()```.
 
 ```
 import (

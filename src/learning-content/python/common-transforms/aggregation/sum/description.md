@@ -4,7 +4,7 @@ Transforms for computing the sum of the elements in a collection, or the sum of 
 
 ### Sum of the elements in a PCollection
 
-We use ```Combine.Globally()``` to get sum of all the element values from the entire ```PCollection```.
+You can find the global sum value from the ```PCollection``` by using ```CombineGlobally(sum)```
 
 ```
 import apache_beam as beam
@@ -25,7 +25,7 @@ Output
 
 ### Sum of the elements for each key
 
-We use ```Combine.PerKey()``` to get the sum of all the element values for each unique key in a ```PCollection``` of key-values.
+You can use ```Combine.PerKey()``` to get the sum of all the element values for each unique key in a ```PCollection``` of key-values.
 
 ```
 import apache_beam as beam

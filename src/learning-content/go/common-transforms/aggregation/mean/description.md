@@ -2,7 +2,7 @@
 
 Transforms for computing the arithmetic mean of the elements in a collection, or the mean of the values associated with each key in a collection of key-value pairs.
 
-```stats.Mean``` returns a transform that then returns a collection whose contents is the mean of the input collection’s elements. If there are no elements in the input collection, it returns 0.
+```Mean()``` returns a transformation that returns a collection whose content is the average of the elements of the input collection. If there are no elements in the input collection, 0 is returned.
 
 ```
 import (
@@ -15,7 +15,7 @@ func ApplyTransform(s beam.Scope, input beam.PCollection) beam.PCollection {
 }
 ```
 
-Calculate the mean of the elements associated with each unique key.
+To calculate the mean of the elements associated with each unique key, you can use ```MeanPerKey()```
 
 ```
 import (

@@ -2,7 +2,7 @@
 
 Transforms for computing the arithmetic mean of the elements in a collection, or the mean of the values associated with each key in a collection of key-value pairs.
 
-```Mean.globally()``` returns a transform that then returns a collection whose contents is the mean of the input collection’s elements. If there are no elements in the input collection, it returns 0.
+```Mean.globally()``` returns a transformation that returns a collection whose content is the average of the elements of the input collection. If there are no elements in the input collection, 0 is returned.
 
 ```
 PCollection<Integer> numbers = pipeline.apply(Create.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));

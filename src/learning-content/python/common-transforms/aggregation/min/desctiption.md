@@ -4,7 +4,7 @@ Provides a variety of different transforms for computing the minimum values in a
 
 ### Minimum element in a PCollection
 
-We use ```Combine.Globally()``` to get the minimum element from the entire ```PCollection```.
+You use ```CombineGlobally(lambda elements: min(elements or [-1]))``` to get the minimum element from the entire ```PCollection```.
 
 ```
 import apache_beam as beam
@@ -25,7 +25,7 @@ Output
 
 ### Minimum elements for each key
 
-We use ```Combine.PerKey()``` to get the minimum element for each unique key in a ```PCollection``` of key-values.
+You can use ```Combine.PerKey()``` to get the minimum element for each unique key in a ```PCollection``` of key-values.
 
 ```
 import apache_beam as beam

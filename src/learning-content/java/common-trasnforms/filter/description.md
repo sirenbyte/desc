@@ -1,6 +1,6 @@
 ### Using Filter
 
-Given a predicate, filter out all elements that do not satisfy this predicate. It can also be used for filtering based on an inequality with a given value based on the order of comparison of the element.
+You can filter the dataset by criteria. It can also be used for equality based.Filter accepts a function that keeps elements that return True, and filters out the remaining elements.
 
 ```
 PCollection<String> allStrings = pipeline
@@ -14,8 +14,6 @@ PCollection<String> filteredStrings = allStrings
             }
         }));
 ```
-
-Filter accepts a function that keeps elements that return True, and filters out the remaining elements.
 
 ---
 
